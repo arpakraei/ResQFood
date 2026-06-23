@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px; /* App Definition */
+  padding: 16px 24px; /* App Definition */
+  background-color: #143247; /* App Definition */
+  color: #ffffff; /* App Definition */
+}
