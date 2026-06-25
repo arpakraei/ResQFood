@@ -72,10 +72,13 @@
   color: var(--color-text-primary);
 }
 
-.white {
+.backgroundColor {
   color: var(--color-background-page);
 }
 
+.white {
+  color: white;
+}
 /* Filled icons */
 
 .filled .icon {
