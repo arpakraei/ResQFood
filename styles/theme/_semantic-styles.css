@@ -41,6 +41,7 @@ html {
   --color-white: #ffffff;
   --color-black: #000000;
 
+
   /* Backgrounds */
   --color-background-page: var(--color-white);
   --color-background-primary: #002747;
@@ -156,6 +157,8 @@ html {
   /* Icons */
   --color-icon-primary: var(--color-black);
   --color-icon-primary-inverse: var(--color-white);
+  --color-icon-accent: var(--color-background-accent);
+  --color-icon-alert: var(--color-border-error);
   /* Avatar */
   --color-avatar-primary: var(--color-black);
   --color-avatar-primary-inverse: var(--color-white);
