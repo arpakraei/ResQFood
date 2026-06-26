@@ -135,6 +135,17 @@ html {
   --line-height-disclaimer-small: 0.8rem; /* 8px */
   --font-weight-disclaimer-small: 300; /* Light */
 
+  /* Price */
+  --font-family-price: "Inter", sans-serif;
+
+  --font-size-price-current: 1.6rem; /* 16px */
+  --line-height-price-current: 2rem; /* 20px */
+  --font-weight-price-current: 700;
+
+  --font-size-price-original: 1.2rem; /* 12px */
+  --line-height-price-original: 1.6rem; /* 16px */
+  --font-weight-price-original: 500;
+
   /* Shadows */
   --shadow-card: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 

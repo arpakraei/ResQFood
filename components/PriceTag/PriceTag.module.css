@@ -1,0 +1,19 @@
+.priceTag {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--spacing-2xs);
+}
+.originalPrice {
+  color: var(--color-text-muted);
+  font-family: var(--font-family-price);
+  font-size: var(--font-size-price-original);
+  line-height: var(--line-height-price-original);
+  font-weight: var(--font-weight-price-original);
+}
+.discountPrice {
+  color: var(--color-text-success);
+  font-family: var(--font-family-price);
+  font-size: var(--font-size-price-current);
+  line-height: var(--line-height-price-current);
+  font-weight: var(--font-weight-price-current);
+}
