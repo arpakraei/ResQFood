@@ -186,4 +186,7 @@ html {
   /* Avatar */
   --color-avatar-primary: var(--color-black);
   --color-avatar-primary-inverse: var(--color-white);
+
+  /* Font Family */
+  --font-family-info: "Arial", "Helvetica", sans-serif;
 }
