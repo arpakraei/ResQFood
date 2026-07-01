@@ -9,9 +9,7 @@ export default function Carousel({ children, ariaLabel = "Carousel" }) {
   const scrollByPage = (direction) => {
     const track = trackRef.current;
 
-    if (!track) {
-      return;
-    }
+    if (!track) return;
 
     track.scrollBy({
       left: direction * track.clientWidth,
@@ -19,9 +17,7 @@ export default function Carousel({ children, ariaLabel = "Carousel" }) {
     });
   };
 
-  if (slides.length === 0) {
-    return null;
-  }
+  if (slides.length === 0) return null;
 
   return (
     <section className={styles.wrapper} aria-label={ariaLabel}>
