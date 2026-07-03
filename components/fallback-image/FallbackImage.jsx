@@ -11,16 +11,17 @@ export default function FallbackImage({
 	onError,
 	...props
 }) {
-	const [imageSrc, setImageSrc] = useState(src || fallbackSrc);
-	const isShowingFallback = imageSrc === fallbackSrc;
+	const [imageError, setImageError] = useState(false);
+	const isShowingFallback = imageError || !src;
+	const imageSrc = isShowingFallback ? fallbackSrc : src;
 
 	useEffect(() => {
-		setImageSrc(src || fallbackSrc);
-	}, [src, fallbackSrc]);
+		setImageError(false);
+	}, [src]);
 
 	const handleError = (event) => {
-		if (imageSrc !== fallbackSrc) {
-			setImageSrc(fallbackSrc);
+		if (!isShowingFallback) {
+			setImageError(true);
 		}
 		onError?.(event);
 	};
