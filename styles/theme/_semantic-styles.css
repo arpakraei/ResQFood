@@ -51,6 +51,9 @@ html {
   --color-background-accent: #42a866;
   --color-background-warn: #f6f8af;
   --color-background-info: #cfe3f0;
+  --color-background-attention: #d58319;
+  --color-background-error-strong: #b3261e;
+
   /* Text Colors */
   --color-text-primary: var(--color-black);
   --color-text-primary-inverse: var(--color-white);
@@ -142,6 +145,7 @@ html {
 
   /* Shadows */
   --shadow-card: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 4px 7px rgba(0, 0, 0, 0.2);
 
   /* Border Radius */
 

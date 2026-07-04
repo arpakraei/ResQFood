@@ -33,17 +33,19 @@
   background-color: var(--color-background-success);
   color: var(--color-text-success);
 }
+
 .closed {
   background-color: var(--color-background-error);
   color: var(--color-text-error);
   border: 1px solid var(--color-border-error);
 }
-.discount {
+
+.deals {
   background-color: var(--color-background-accent);
   color: var(--color-text-primary-inverse);
 }
 
-.deals {
+.discount {
   background-color: var(--color-background-warn);
   color: var(--color-text-primary);
 }
