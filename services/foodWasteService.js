@@ -56,7 +56,7 @@ export async function getFoodWasteByZip(zip) {
   return apiClient(path);
 }
 
-export async function getProductByStoreAndEan(storeId, ean) {
+export async function getProductByStoreAndEan(id, ean) {
   if (storeId == null) {
     throw new ApiError("Store  is not found", {
       status: 0,
@@ -71,11 +71,25 @@ export async function getProductByStoreAndEan(storeId, ean) {
     });
   }
 
-  const storeResult = await getFoodWasteByStoreId(storeId);
+  const storeResult = await getFoodWasteByStoreId(id);
+  const allProductsInStore = storeResult.clearances;
 
-  const clearances = storeResult.clearances.filter(product)
-  const filteredProduct = clearances.filter(product => product.ean === product.ean);
-   return filteredProduct.product
+  const selectedProduct = allProductsInStore.find((item) => {
+    const productEan = String(item.offer.ean);
+    const selectedEan = String(ean);
 
+    return productEan === selectedEan;
+  });
+
+  if (!selectedProduct) {
+    throw new ApiError("Product is not found in the store", {
+      status: 0,
+      details: "MISSING_PRODUCT_IN_STORE",
+    });
+  }
+  return {
+    store: storeResult.store,
+    offer: selectedProduct.offer,
+    product: selectedProduct.product,
+  };
 }
-
