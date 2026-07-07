@@ -7,28 +7,11 @@ import ProductCard from "../product/ProductCard";
 import Carousel from "../ui/Carousel/Carousel";
 import Link from "next/link";
 import Filter from "@/components/filter/Filter";
-import { filterProductsByCategory } from "@/utils/filterProduct";
-import useCategoryFilter from "@/hooks/useCategoryFilter";
+import useStoreFiltering from "@/hooks/useStoreFiltering";
 
 export default function StoreList({ data = [] }) {
-  const allProducts = data.flatMap((storeResult) => storeResult.clearances);
-
-  const { selectedCategory, setSelectedCategory, categories } =
-    useCategoryFilter(allProducts);
-
-  const filteredStores = data
-    .map((storeResult) => {
-      const filteredClearances = filterProductsByCategory(
-        storeResult.clearances,
-        selectedCategory,
-      );
-
-      return {
-        ...storeResult,
-        clearances: filteredClearances,
-      };
-    })
-    .filter((storeResult) => storeResult.clearances.length > 0);
+  const { selectedCategory, setSelectedCategory, categories, filteredStores } =
+    useStoreFiltering(data);
 
   return (
     <>
