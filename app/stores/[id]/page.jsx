@@ -1,7 +1,7 @@
 import StoreCard from "@/components/storeCard/StoreCard";
 import ProductSection from "@/components/product/ProductSection/ProductSection";
 import { getFoodWasteByStoreId } from "@/services/foodWasteService";
-import BackLink from "@/components/ui/BackLink/BackLink";
+import BackButton from "@/components/ui/Button/BackButton/BackButton";
 import dataFormatter from "@/components/storeList/dataFormatter.helper";
 import styles from "./page.module.css";
 
@@ -15,7 +15,7 @@ export default async function StoreDetailsPage({ params }) {
   return (
     <main className={styles.page}>
       <div className={styles.topBar}>
-        <BackLink href="/stores" />
+       <BackButton/>
       </div>
 
       <StoreCard
