@@ -19,7 +19,7 @@ main {
 	box-shadow: var(--shadow-card);
 	min-height: calc(100vh - 10rem);
 	padding: 0.8rem;
-	background: linear-gradient(145deg, #e7f8fa 0%, #e7f0fa 52%, #f7f6fa  100%);
+	background: var(--color-background-page);
 }
 
 .mainPageContainer {
