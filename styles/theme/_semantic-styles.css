@@ -1,6 +1,6 @@
 html {
   /* 1rem = 10px (62.5% of 16px default) */
-  font-size: 68.5%;
+  font-size: 62.5%;
 }
 
 /* ---- scale DOWN ---- */
@@ -22,7 +22,7 @@ html {
 /* phone: < 600px  →  keep 1rem = 8px (don't go lower or text gets too small) */
 @media only screen and (max-width: 37.5em) {
   html {
-    font-size: 60%;
+    font-size: 50%;
   }
 }
 
@@ -76,6 +76,12 @@ html {
   /* Badges */
 
   /* ==================== TYPOGRAPHY ==================== */
+
+  /* Headline ExtraLarge */
+  --font-family-headline-extraLarge: "Inter", sans-serif;
+  --font-size-headline-extraLarge: 5.2rem; /* 32px */
+  --line-height-headline-extraLarge: 4rem; /* 40px */
+  --font-weight-headline-extraLarge: 800; /* ExtraBold */
 
   /* Headline Large */
   --font-family-headline-large: "Inter", sans-serif;

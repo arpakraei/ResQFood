@@ -18,7 +18,7 @@ export default function StoreCard({
     <>
       <div className={`${styles.storeCard} ${styles[variant]}`}>
         <div className={styles.storeDetails}>
-          <StoreAvatar brand={id} size="md" />
+          <StoreAvatar brand={id} size="lg" />
         </div>
         <div className={styles.storeInfo}>
           <p className={styles.storeName}>{name}</p>
