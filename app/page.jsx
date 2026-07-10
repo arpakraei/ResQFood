@@ -94,7 +94,8 @@ export default function Home() {
             <InfoList />
           )}
         </section>
-        <section>
+        <section className="findStoresSection">
+          <h2 className="findStoresTitle">Find stores near you</h2>
           <SearchInput
             onSearch={goToStoresBySearch}
             error={searchError}
