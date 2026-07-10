@@ -35,7 +35,7 @@
   margin: 0;
   color: var(--color-text-primary);
 
-  font-family: var(--font-family-body, inherit);
+  font-family: var(--font-family-body-large);
   font-size: var(--font-size-body-large);
   line-height: var(--line-height-body-large);
 

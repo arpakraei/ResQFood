@@ -53,7 +53,7 @@ html {
   --color-background-info: #cfe3f0;
   --color-background-attention: #d58319;
   --color-background-error-strong: #b3261e;
-  --color-background-action :#14612f;
+  --color-background-action: #14612f;
 
   /* Text Colors */
   --color-text-primary: var(--color-black);
@@ -72,8 +72,8 @@ html {
   --color-border-error: var(--color-deep-red);
   --color-border-success: #c0e5c1;
   --color-border-info: #8bb8d6;
-  --color-border-action:#14612f;
-  --color-border-closing:#8a4b00;
+  --color-border-action: #14612f;
+  --color-border-closing: #8a4b00;
 
   /* Badges */
 
@@ -134,7 +134,6 @@ html {
   --line-height-label-extra-small: 1.6rem;
   --font-weight-label-extra-small: 600; /* SemiBold */
   --font-weight-label-extra-small-emphasized: 800; /* ExtraBold */
-  
 
   /* Body Large */
   --font-family-body-large: "Inter", sans-serif;
@@ -142,13 +141,11 @@ html {
   --line-height-body-large: 2.5rem; /* 25px */
   --font-weight-body-large: 400; /* Regular */
 
-
   /* Body Medium */
   --font-family-body-medium: "Inter", sans-serif;
   --font-size-body-medium: 1.5rem; /* 12px */
   --line-height-body-medium: 2rem; /* 20px */
   --font-weight-body-medium: 500; /* Medium */
-
 
   /* Body Small */
   --font-family-body-small: "Inter", sans-serif;
@@ -157,9 +154,8 @@ html {
   --font-weight-body-small-emphasized: 600; /* SemiBold */
 
   /* Shadows */
-  --shadow-card:  0 8px 24px rgba(0, 39, 71, 0.08);
+  --shadow-card: 0 8px 24px rgba(0, 39, 71, 0.08);
   --shadow-hover: 0 12px 32px rgba(0, 39, 71, 0.14);
-
 
   /* Border Radius */
 
