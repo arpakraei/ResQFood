@@ -4,6 +4,7 @@ import ProductDetailCard from "@/components/product/ProductDetailCard";
 import { getProductByStoreAndEan } from "@/services/foodWasteService";
 import dataFormatter from "@/components/storeList/dataFormatter.helper";
 import BackLink from "@/components/ui/BackLink/BackLink";
+import "@/styles/base/_pages.css";
 
 export default async function ProductDetailPage({ params }) {
   const { id, productId } = await params;
@@ -24,12 +25,13 @@ export default async function ProductDetailPage({ params }) {
   }
 
   return (
-    <main>
-      <div>
+    <main className="productDetailPage">
+      <div className="productDetailPageTopBar">
         <BackLink />
       </div>
-      <div>
-        <div>
+
+      <div className="productDetailPageContent">
+        <div className="productDetailStore">
           <StoreCard
             name={formattedStore.name}
             id={formattedStore.brand}
@@ -41,7 +43,7 @@ export default async function ProductDetailPage({ params }) {
           />
         </div>
 
-        <section>
+        <section className="productDetailProduct">
           <ProductDetailCard offer={offer} product={product} />
         </section>
       </div>
