@@ -134,7 +134,6 @@
 
 /* Tablet & Desktop */
 @media (min-width: 768px) {
-/*Current Change*/
   .mainPageContainer {
     width: min(100%, 96rem);
   }
@@ -180,7 +179,6 @@
     margin-bottom: var(--spacing-xl);
   }
 
-/*origin/development*/
   .productDetailPageContent {
     align-items: center;
     justify-content: space-between;
