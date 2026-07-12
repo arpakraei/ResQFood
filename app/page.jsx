@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 import FrontpageBanner from "@/components/FrontpageBanner/FrontpageBanner";
 import InfoList from "@/components/ui/InfoList/InfoList";
@@ -106,6 +107,17 @@ export default function Home() {
               )}
             </div>
 
+            <div className="packBlock">
+              <Image
+                className="packImage"
+                src="/pack2.png"
+                alt=""
+                aria-hidden="true"
+                width={400}
+                height={400}
+              />
+            </div>
+
             <div className="searchBlock">
               <section className="findStoresSection">
                 <h2 className="findStoresTitle">Find stores near you</h2>
@@ -119,10 +131,26 @@ export default function Home() {
                 />
               </section>
 
+              <div className="searchDivider" aria-hidden="true">
+                <span className="searchDividerText">or</span>
+              </div>
+
               <Geolocation
                 setUserPosition={goToStoresByLocation}
                 getError={handleLocationError}
               />
+
+              <p className="togetherText">
+                <Image
+                  className="togetherLeaf"
+                  src="/leaf.png"
+                  alt=""
+                  aria-hidden="true"
+                  width={20}
+                  height={20}
+                />
+                <span>Together we can make a difference.</span>
+              </p>
             </div>
           </section>
           <section>
