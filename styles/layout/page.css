@@ -1,3 +1,7 @@
+* {
+  font-family: var(--font-family-headline-large);
+}
+
 :root {
   /* --page-max-width: 120rem; */
   --page-gap: clamp(1.6rem, 2.4vw, 3.2rem);

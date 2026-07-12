@@ -23,6 +23,7 @@
 }
 
 .input[type="text"] {
+  font-family: var(--font-family-label-large);
   font-size: var(--font-size-label-large);
   font-weight: var(--font-weight-label-large);
 }
